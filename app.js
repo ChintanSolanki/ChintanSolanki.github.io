@@ -46,14 +46,3 @@ document.getElementById('trailheadLinkContact').href = personalInfo.trailheadURL
 // Footer
 document.getElementById('copyrightYear').textContent = personalInfo.copyrightYear;
 document.getElementById('nameFooter').textContent = personalInfo.name;
-
-// Optional: Smooth scrolling
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
