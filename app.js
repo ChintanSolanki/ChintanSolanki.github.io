@@ -28,10 +28,10 @@ personalInfo.projects.forEach(project => {
     projectCard.innerHTML = `
         <h3>${project.title}</h3>
         <p>${project.description}</p>
-        <div class="project-links">
-            <a href="${project.githubLink}" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            ${project.demoLink ? `<a href="${project.demoLink}" target="_blank">Demo</a>` : ''}
-        </div>
+        // <div class="project-links">
+        //     <a href="${project.githubLink}" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        //     ${project.demoLink ? `<a href="${project.demoLink}" target="_blank">Demo</a>` : ''}
+        // </div>
     `;
     projectGrid.appendChild(projectCard);
 });

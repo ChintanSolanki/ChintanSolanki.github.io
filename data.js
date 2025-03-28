@@ -35,20 +35,14 @@ const personalInfo = {
         {
             title: "WhatsApp Business API Integration (2GP Managed Package)",
             description: "Designed and developed a 2GP managed package for seamless WhatsApp Business API integration within Salesforce. Features include automated messaging via Apex scheduling, a WhatsApp web UI built with LWC (supporting real-time updates with CDC), an admin-configurable chatbot powered by Drawflow, and multi-account management with round-robin conversation distribution.",
-            githubLink: "[GITHUB_LINK_WHATSAPP_INTEGRATION]", // Replace with your GitHub link if applicable
-            demoLink: "[DEMO_LINK_WHATSAPP_INTEGRATION]" // Replace with a demo link if applicable
         },
         {
             title: "Salesforce-CTI Integration App (2GP Managed Package)",
             description: "Developed a 2GP managed package to integrate Salesforce with VICIdial, FreePBX, and custom PBX systems, enhancing call handling and agent productivity. Key features include call pop-ups, recent call logs, Click-to-Call, call recording access, and a dial pad. Integrated CometD for cross-edition call event subscriptions.",
-            githubLink: "[GITHUB_LINK_CTI_INTEGRATION]", // Replace with your GitHub link if applicable
-            demoLink: "[DEMO_LINK_CTI_INTEGRATION]" // Replace with a demo link if applicable
         },
         {
             title: "Custom Salesforce Reporting – ALM & TPS Reports",
             description: "Developed custom ALM and TPS reports using Aura Components and Apex to meet complex reporting needs. The ALM report analyzed potential revenue year-over-year with customizable categorization, and the TPS report provided detailed insights on orders, CRM data, financial metrics, and monthly performance tracking. Deployed to production using change sets.",
-            githubLink: "[GITHUB_LINK_CUSTOM_REPORTS]", // Replace with your GitHub link if applicable
-            demoLink: "[DEMO_LINK_CUSTOM_REPORTS]" // Replace with a demo link if applicable
         }
     ],
     copyrightYear: new Date().getFullYear()
