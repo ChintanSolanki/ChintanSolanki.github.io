@@ -5,9 +5,9 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif; /* Or Lato, Roboto */
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    background-color: #f4f8fb; /* Very light blue background */
+    background-color: #f4f6fb;
     color: #333;
 }
 
@@ -17,108 +17,102 @@ body {
     padding: 20px;
 }
 
+/* Header Styles */
 header {
-    background: linear-gradient(to right, #2962ff, #00b0ff);
+    /* background-color: #2962ff; */
     color: white;
     padding: 1rem 0;
+    height: 240px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+header .container {
+    background: none;
+    padding: 1rem 20px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    /* Test Background should be gone */
+    /* background-color: rgba(255, 0, 0, 0.2); */
 }
 
-header .tagline {
-    font-size: 1.2rem; /* Corrected typo: was 12.rem */
-    font-weight: 300;
+/* About Section Styles */
+.about-section {
+    padding: 2rem 0;
 }
 
-.tagline-container {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Adjust spacing between icon and text */
-    justify-self: center;
-}
-
-.tagline-container i {
-    font-size: 5rem; /* Adjust icon size */
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #00b0ff; /* A lighter, accent blue */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #0091ea;
-}
-
-/* Main Sections */
-main section {
-    padding: 40px 0;
-}
-
-main h2 {
+.about-section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #2962ff;
     text-align: center;
 }
 
-/* About Section */
-.about-section {
-    background-color: white;
-}
-
 .about-section p {
     font-size: 1.1rem;
+    line-height: 1.8;
 }
 
-/* Skills Section */
+/* Skills Section Styles */
 .skills-section {
-    background-color: #e3f2fd; /* Lightest blue for skills */
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+    text-align: center;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    text-align: center;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .skill-item {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* For icon and text alignment */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    text-align: center;
 }
 
 .skill-item i {
     font-size: 2rem;
     color: #2962ff;
+    margin-bottom: 0.75rem;
+}
+
+.skill-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Style for Language Skill Item  */
+.skill-item-languages {
+    grid-column: 1 / -1;   /* Span full width */
+    text-align: left;        /* Left-align the text */
+}
+
+.skill-item-languages h3 {
+    font-size: 1.2rem;
+    color: #2962ff;
     margin-bottom: 0.5rem;
 }
 
-/* Languages Section Redesign */
+.skill-item-languages p {
+    font-size: 1rem;
+    margin: 0;  /* Reset default paragraph margin */
+}
+
+/* Languages Styles (if you keep this separate) */
 .languages {
     margin-top: 2rem;
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .languages h3 {
@@ -129,85 +123,122 @@ main h2 {
 
 .languages ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .languages li {
     font-size: 1.1rem;
+    padding: 0.5rem 0;
 }
 
-.education-section {
-    padding: 4rem 0;
-    background-color: #f0f8ff; /* A slightly different background to distinguish it (optional) */
-}
-
-.education-item {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    border-left: 0.25rem solid #2962ff; /* Optional: A colored bar on the left */
-}
-
-.education-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.education-item p {
-    margin-bottom: 0.25rem;
-}
-
-/* Projects Section */
+/* Projects Section Styles */
 .projects-section {
-    background-color: white;
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+    text-align: center;
 }
 
 .project-item {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
 }
 
 .project-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #2962ff;
     margin-bottom: 0.5rem;
 }
 
 .project-item p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
-/* Certifications Section */
+/* Certifications Section Styles */
 .certifications-section {
-    background-color: #e3f2fd;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.certifications-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+    text-align: center;
 }
 
 .certifications-section ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
 }
 
 .certifications-section li {
-    background-color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    background-color: #e2f3ff;
+    border-radius: 4px;
+    text-align: center;
 }
 
-/* Contact Section */
+/* Education Section Styles */
+.education-section {
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+}
+
+.education-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+    text-align: center;
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+    font-size: 1.3rem;
+    color: #2962ff;
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0.25rem 0;
+}
+
+/* Contact Section Styles */
 .contact-section {
-    background-color: white;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2962ff;
+    text-align: center;
 }
 
 .contact-details {
-    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
     text-align: center;
 }
 
@@ -215,39 +246,31 @@ main h2 {
     margin-bottom: 0.5rem;
 }
 
-.contact-details i {
-    margin-right: 0.5rem;
+.contact-details a {
     color: #2962ff;
+    text-decoration: none;
 }
 
-/* Footer */
-footer {
-    background-color: #2962ff;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Font Awesome Icons */
+.fas, .fab {
+    margin-right: 0.5rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 
     .certifications-section ul {
-         grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .languages ul {
-        flex-direction: column;
+    .skill-item-languages {
+        grid-column: 1 / 1;  /* Reset to single column */
     }
 }
