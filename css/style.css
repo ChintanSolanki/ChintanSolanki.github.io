@@ -20,9 +20,12 @@ body {
 /* Header */
 header {
     /* background-color: #2962ff; */
-    background-image: url('../images/ranger-background.png');
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     padding: 1rem 0;
+    height: 240px;
     text-align: center;
 }
 
