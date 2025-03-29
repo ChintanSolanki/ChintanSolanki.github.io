@@ -9,52 +9,132 @@ body {
 .container {
     max-width: 960px; /* Or your preferred max-width */
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-/* Header */
+/* Header - Top Navigation Bar */
 header {
-    background: linear-gradient(to right, #2962ff, #00b0ff);
-    color: white;
-    padding: 2rem 0; /* Increased padding for better spacing */
+    /* We'll style the header's parts separately */
+    /* No background or padding here initially */
+    color: #333; /* Dark color for header text */
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.top-nav {
+    background-color: #e3f2fd; /* Light blue nav background */
+    color: #333; /* Dark color for nav text */
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-header .tagline {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.tagline-container {
+.top-nav .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
-    justify-content: center; /* Changed from justify-self */
 }
 
-.tagline-container i {
-    font-size: 5rem;
+.top-nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2962ff; /* Primary blue for logo */
+    text-decoration: none;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #00b0ff;
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    margin-left: 1.5rem;
+}
+
+.top-nav ul li a {
+    color: #333; /* Dark color for nav links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.top-nav ul li a:hover {
+    color: #00b0ff; /* Lighter blue for link hover */
+}
+
+/* Header - Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2962ff, #00b0ff); /* Example gradient background */
     color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* Dark color for hero heading */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #333; /* Dark color for hero subtitle */
+}
+
+.hero-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333; /* Dark color for hero intro */
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #2962ff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #0091ea;
+.hero-button:hover {
+    background-color: #00b0ff;
+    color: white;
 }
+
+/* Optional Hero Image */
+.hero-image {
+    flex: 0 0 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 /* Main Sections - Consistent Styling */
 main section {
