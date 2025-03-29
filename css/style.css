@@ -35,6 +35,8 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
+    position: relative; /* Needed for pseudo-element positioning */
+    overflow: hidden; /* To hide any overflow from the shape */
 }
 
 header h1 {
