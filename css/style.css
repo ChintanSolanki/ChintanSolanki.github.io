@@ -42,7 +42,7 @@ header .tagline {
 }
 
 .tagline-container i {
-    font-size: 1.5rem; /* Adjust icon size */
+    font-size: 5rem; /* Adjust icon size */
 }
 
 .cta-button {
@@ -138,6 +138,26 @@ main h2 {
 
 .languages li {
     font-size: 1.1rem;
+}
+
+.education-section {
+    padding: 4rem 0;
+    background-color: #f0f8ff; /* A slightly different background to distinguish it (optional) */
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 0.25rem solid #2962ff; /* Optional: A colored bar on the left */
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    margin-bottom: 0.25rem;
 }
 
 /* Projects Section */
