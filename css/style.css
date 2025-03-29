@@ -18,21 +18,14 @@ body {
 }
 
 header {
-    /* background-color: #2962ff; */ /* Remove the solid blue */
+    background-color: #2962ff;
+    /* background-image: url('../images/header-bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; */
     color: white;
     padding: 1rem 0;
     height: 240px;
     text-align: center;
-    position: relative; /* For positioning pseudo-elements */
-    overflow: hidden; /* To contain the gradient/animation */
-}
-
-header .container {
-    background: none;
-    padding: 1rem 20px;
-    margin: 0 auto;
-    position: relative; /* So content sits above the background */
-    z-index: 2; /* Ensure text is on top */
 }
 
 header h1 {
@@ -41,42 +34,8 @@ header h1 {
 }
 
 header .tagline {
-    font-size: 1.2rem;
+    font-size: 12.rem;
     font-weight: 300;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #00b0ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #0091ea;
-}
-
-/* --- Creative Header Background Options --- */
-
-/* Option 1: Gradient with Cloud-Like Effect */
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #4a90e2, #63b8ff); /* Lighter blues */
-    opacity: 0.7; /* Adjust for intensity */
-    z-index: 1; /* Place behind content */
-    /* Add a subtle "cloud" effect */
-    background-image:  
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.2), transparent),
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1), transparent);
 }
 
 .cta-button {
