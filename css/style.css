@@ -19,12 +19,8 @@ body {
 
 header {
     background-color: #2962ff;
-    /* background-image: url('../images/header-bg.jpg');
-    background-size: contain;
-    background-repeat: no-repeat; */
     color: white;
     padding: 1rem 0;
-    /* height: 240px; */
     text-align: center;
 }
 
@@ -34,7 +30,7 @@ header h1 {
 }
 
 header .tagline {
-    font-size: 12.rem;
+    font-size: 1.2rem; /* Corrected typo: was 12.rem */
     font-weight: 300;
 }
 
@@ -92,6 +88,10 @@ main h2 {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* For icon and text alignment */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-item i {
@@ -100,15 +100,33 @@ main h2 {
     margin-bottom: 0.5rem;
 }
 
+/* Languages Section Redesign */
 .languages {
     margin-top: 2rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.languages h3 {
+    font-size: 1.5rem;
+    color: #2962ff;
+    margin-bottom: 1rem;
 }
 
 .languages ul {
     list-style: none;
+    padding: 0;
     display: flex;
+    gap: 1.5rem;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+}
+
+.languages li {
+    font-size: 1.1rem;
 }
 
 /* Projects Section */
@@ -196,5 +214,9 @@ footer {
 
     .certifications-section ul {
          grid-template-columns: 1fr;
+    }
+
+    .languages ul {
+        flex-direction: column;
     }
 }
